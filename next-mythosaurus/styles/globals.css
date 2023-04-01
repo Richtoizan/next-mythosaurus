@@ -19,7 +19,8 @@ nav {
   padding: 0px 0px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+
+  align-items: center;
   border-bottom: 1px solid #ddd;
 }
 
@@ -29,15 +30,18 @@ nav a {
 
 nav .logo {
   margin-right: auto;
+  display: flex; /* Added */
+  align-items: center; /* Added */
 }
 
-
 footer {
+  left: 0;
   position: fixed;
   bottom: 0;
   width: 100%;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 30px 0;
   color: #777;
   border-top: 1px solid #eaeaea;
@@ -47,6 +51,6 @@ footer {
   text-align: center;
 }
 .not-found a{
-  color: #4979ff;
+  color: darkgoldenrod;
   text-decoration: underline;
 }

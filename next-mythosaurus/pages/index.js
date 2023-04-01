@@ -10,13 +10,23 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div>
-      <h1 className={styles.title}>Homepage</h1>
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis dolores et consequuntur. Iusto natus accusantium, dolore aliquam, cumque reiciendis, rerum non deleniti voluptate aut autem! Adipisci dicta ducimus laborum!</p>
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis dolores et consequuntur. Iusto natus accusantium, dolore aliquam, cumque reiciendis, rerum non deleniti voluptate aut autem! Adipisci dicta ducimus laborum!</p>
-      <Link className={styles.btn} href="/mythologies">
-        See Mythologies
-      </Link>
-    </div>
+    <>
+      <Head>
+        <title>Mythosaurus | Home</title>
+        <meta name="keywords" content="mythology" />
+        <link rel="icon" href="/logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      </Head>
+      <div>
+        <h1 className={styles.title}>Homepage</h1>
+        <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis dolores et consequuntur. Iusto natus accusantium, dolore aliquam, cumque reiciendis, rerum non deleniti voluptate aut autem! Adipisci dicta ducimus laborum!</p>
+        <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis dolores et consequuntur. Iusto natus accusantium, dolore aliquam, cumque reiciendis, rerum non deleniti voluptate aut autem! Adipisci dicta ducimus laborum!</p>
+        <Link className={styles.btn} href="/mythologies">
+          See Mythologies
+        </Link>
+      </div>
+    </>
   )
 }
