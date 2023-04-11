@@ -1,36 +1,46 @@
-export const getStaticPaths = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await res.json();
+import { getGodByName } from "/db";
 
-  const paths = data.map((greek) => {
-    return {
-      params: { id: greek.id.toString() },
-    };
-  });
+export async function getServerSideProps() {
+  const zeus = await getGodByName("Zeus");
 
   return {
-    paths,
-    fallback: false,
+    props: {
+      zeus,
+    },
   };
-};
+}
+// export const getStaticPaths = async () => {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const data = await res.json();
 
-export const getStaticProps = async (context) => {
-  const id = context.params.id;
-  const res = await fetch("https://jsonplaceholder.typicode.com/users/" + id);
-  const data = await res.json();
+//   const paths = data.map((greek) => {
+//     return {
+//       params: { id: greek.id.toString() },
+//     };
+//   });
 
-  return {
-    props: { greek: data },
-  };
-};
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
-const Details = ({ greek }) => {
+// export const getStaticProps = async (context) => {
+//   const id = context.params.id;
+//   const res = await fetch("https://jsonplaceholder.typicode.com/users/" + id);
+//   const data = await res.json();
+
+//   return {
+//     props: { greek: data },
+//   };
+// };
+
+const Details = ({ zeus }) => {
   return (
     <div>
       <h1>Details</h1>
-      <h3>{greek.name}</h3>
-      <p>{greek.email}</p>
-      <p>{greek.website}</p>
+      <h3>{zeus.name}</h3>
+      <p>{zeus.description}</p>
       {/* <p>{greek.address.city}</p> */}
     </div>
   );
