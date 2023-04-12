@@ -19,8 +19,15 @@ async function connectToDB() {
   return client.db("mythosaurus-db");
 }
 
-export async function getGodByName(name) {
+export async function getDocumentById(collectionName, id) {
   const db = await connectToDB();
-  const god = await db.collection("gods").findOne({ name });
-  return god;
+  const document = await db.collection(collectionName).findOne({ _id: id });
+  return document;
+}
+
+export async function getAllDocuments(collectionName) {
+  const db = await connectToDB();
+  const documents = await db.collection(collectionName).find().toArray();
+  console.log("Fetched Documents:", documents); // log fetched documents to console
+  return documents;
 }
