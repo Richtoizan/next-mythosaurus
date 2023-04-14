@@ -27,7 +27,9 @@ const Mythologies = ({ documents }) => {
           <div key={document._id}>
             {
               <div key={document._id}>
-                <h2>{document.name}</h2>
+                <Link href={"/mythologies/" + document._id}>
+                  <h2>{document.name}</h2>
+                </Link>
                 <p>{document.description}</p>
               </div>
             }
