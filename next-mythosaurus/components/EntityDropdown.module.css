@@ -1,0 +1,63 @@
+.dropdown {
+  position: relative; /* Add this line */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.entityList {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Adjust the duration if needed */
+}
+
+.entityListItem {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.showList {
+  max-height: 500px; /* Set a max-height to allow the transition effect */
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ... other styles ... */
+
+.seeAll {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0; /* Set the initial opacity to 0 */
+  transition: opacity 0.5s ease-out; /* Add a transition for the opacity property */
+  transition-delay: 1s; /* Add a transition delay equal to the max-height transition duration */
+}
+
+.entityList.showList .seeAll {
+  /* Increase the specificity of the selector */
+  opacity: 1; /* Set the opacity to 1 when the list is expanded */
+}
+
+.seeAllArrow {
+  margin-left: 0.5rem;
+}

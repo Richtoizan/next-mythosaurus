@@ -4,6 +4,7 @@ import {
   getAllDocumentsWithAttribute,
 } from "db";
 import Head from "next/head";
+import EntityAttributes from "components/EntityAttributes";
 
 export async function getStaticProps(context) {
   const entityId = context.params.id;
@@ -63,9 +64,7 @@ const Entity = ({ entityType, entity }) => {
         <meta name="keywords" content="mythology" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <h1>{entity.name}</h1>
-      <p>{entity.description}</p>
-      {/* Add more attributes here as needed */}
+      <EntityAttributes entityType={entityType} entity={entity} />
     </>
   );
 };

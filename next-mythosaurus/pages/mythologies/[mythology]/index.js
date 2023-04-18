@@ -5,6 +5,7 @@ import {
 } from "db";
 import Link from "next/link";
 import Head from "next/head";
+import EntityDropdown from "components/EntityDropdown";
 
 export async function getStaticProps(context) {
   const mythologyId = context.params.mythology;
@@ -58,28 +59,16 @@ const Mythology = ({ mythology, gods, heroes }) => {
       <p>{mythology.description}</p>
 
       {/* Gods */}
-      <h2>Gods</h2>
-      {gods.slice(0, 5).map((god) => (
-        <Link
-          href={`/mythologies/${mythology._id}/gods/${god._id}`}
-          key={god._id}
-        >
-          <h3>{god.name}</h3>
-        </Link>
-      ))}
-      <Link href={`/mythologies/${mythology._id}/gods`}>See all gods</Link>
-
-      {/* Heroes */}
-      <h2>Heroes</h2>
-      {heroes.slice(0, 5).map((hero) => (
-        <Link
-          href={`/mythologies/${mythology._id}/heroes/${hero._id}`}
-          key={hero._id}
-        >
-          <h3>{hero.name}</h3>
-        </Link>
-      ))}
-      <Link href={`/mythologies/${mythology._id}/heroes`}>See all heroes</Link>
+      <EntityDropdown
+        entityType="gods"
+        mythologyId={mythology._id}
+        entities={gods}
+      />
+      <EntityDropdown
+        entityType="Heros"
+        mythologyId={mythology._id}
+        entities={heroes}
+      />
 
       {/* Add more entity types here as needed */}
     </>
