@@ -1,0 +1,165 @@
+[
+  {
+    "_id": "hercules",
+    "name": "Hercules",
+    "mythology": "greek",
+    "description": "Hercules, also known as Heracles, is one of the most famous heroes in Greek mythology. He is renowned for his incredible strength and courage. Hercules is best known for his twelve labors, a series of difficult tasks he was assigned to complete as penance for the murder of his wife and children. Throughout his life, Hercules was a symbol of perseverance and triumph over adversity.",
+    "images": [
+      "/heroes/hercules1.png",
+      "/heroes/hercules2.png",
+      "/heroes/hercules3.png"
+    ],
+    "parents": ["Zeus", "Alcmena"],
+    "children": ["Hyllus", "Iolaus", "Telephus", "Tlepolemus"],
+    "quests": [
+      "Nemean Lion",
+      "Lernaean Hydra",
+      "Ceryneian Hind",
+      "Erymanthian Boar",
+      "Augean Stables",
+      "Stymphalian Birds",
+      "Cretan Bull",
+      "Mares of Diomedes",
+      "Hippolyta's Girdle",
+      "Cattle of Geryon",
+      "Apples of Hesperides",
+      "Cerberus"
+    ],
+    "powers": ["Superhuman strength", "Immortality"],
+    "type": "hero",
+    "order": "g5"
+  },
+  {
+    "_id": "perseus",
+    "name": "Perseus",
+    "mythology": "greek",
+    "description": "Perseus is a legendary Greek hero and demigod, the son of Zeus and Danae. He is best known for slaying the fearsome Gorgon Medusa, a creature with snakes for hair whose gaze could turn people to stone. After a prophecy foretold that he would kill his grandfather, Acrisius, Perseus and his mother were cast into the sea. They were rescued and raised on the island of Seriphos, where Perseus eventually became a hero.",
+    "images": [
+      "/heroes/perseus1.png",
+      "/heroes/perseus2.png",
+      "/heroes/perseus3.png"
+    ],
+    "parents": ["Zeus", "Danae"],
+    "children": [
+      "Perses",
+      "Alcaeus",
+      "Heleus",
+      "Mestor",
+      "Sthenelus",
+      "Electryon",
+      "Cynurus"
+    ],
+    "quests": ["Slaying Medusa", "Rescuing Andromeda", "Killing Acrisius"],
+    "powers": ["Superhuman strength", "Divine protection"],
+    "type": "hero",
+    "order": "g6"
+  },
+  {
+    "_id": "theseus",
+    "name": "Theseus",
+    "mythology": "greek",
+    "description": "Theseus, the legendary king of Athens, was a celebrated hero in Greek mythology. He is famous for his bravery and resourcefulness. Among his many adventures, Theseus is best known for slaying the Minotaur, a half-man, half-bull creature that dwelled in the labyrinth of King Minos of Crete. As a hero, Theseus united the people of Athens and established the city as a significant cultural and political power in ancient Greece.",
+    "images": [
+      "/heroes/theseus1.png",
+      "/heroes/theseus2.png",
+      "/heroes/theseus3.png"
+    ],
+    "parents": ["Aegeus", "Aethra"],
+    "children": ["Hippolytus", "Acamas", "Demophon", "Melanippus", "Ioxus"],
+    "quests": [
+      "Slaying the Minotaur",
+      "Defeating the bandits on the road to Athens",
+      "Rescuing the youths and maidens from Crete"
+    ],
+    "powers": ["Superhuman strength", "Cunning", "Leadership"],
+    "type": "hero",
+    "order": "g7"
+  },
+  {
+    "_id": "bellerophon",
+    "name": "Bellerophon",
+    "mythology": "greek",
+    "description": "Bellerophon is a famous hero in Greek mythology, known for his adventures on the winged horse Pegasus. Born to the mortal King Glaucus of Corinth and the nymph Eurynome, Bellerophon is best remembered for slaying the fearsome Chimera, a fire-breathing monster that was part lion, part goat, and part serpent. As a hero, Bellerophon was celebrated for his bravery, skill, and daring in the face of seemingly insurmountable challenges.",
+    "images": [
+      "/heroes/bellerophon1.png",
+      "/heroes/bellerophon2.png",
+      "/heroes/bellerophon3.png"
+    ],
+    "parents": ["Glaucus", "Eurynome"],
+    "children": ["Isander", "Hippolochus", "Laodamia"],
+    "quests": [
+      "Slaying the Chimera",
+      "Battling the Solymi",
+      "Fighting the Amazons"
+    ],
+    "powers": ["Superhuman strength", "Divine protection", "Expert horseman"],
+    "type": "hero",
+    "order": "g8"
+  },
+  {
+    "_id": "jason",
+    "name": "Jason",
+    "mythology": "greek",
+    "description": "Jason is a legendary hero in Greek mythology, best known for leading the Argonauts on a quest to obtain the Golden Fleece. As the rightful heir to the throne of Iolcus, Jason was sent on the seemingly impossible mission by his usurping uncle, King Pelias. Alongside his crew of heroes, Jason faced numerous challenges and perils on his journey, ultimately succeeding in his quest and returning to claim his throne.",
+    "images": [
+      "/heroes/jason1.png",
+      "/heroes/jason2.png",
+      "/heroes/jason3.png"
+    ],
+    "parents": ["Aeson", "Alcimede"],
+    "children": [
+      "Euneus",
+      "Thessalus",
+      "Tisander",
+      "Mermerus",
+      "Pheres",
+      "Alkimenes"
+    ],
+    "quests": [
+      "Retrieving the Golden Fleece",
+      "Navigating the Clashing Rocks",
+      "Sailing through the Symplegades"
+    ],
+    "powers": ["Leadership", "Resourcefulness", "Divine protection"],
+    "type": "hero",
+    "order": "g9"
+  },
+  {
+    "_id": "icarus",
+    "name": "Icarus",
+    "mythology": "greek",
+    "description": "Icarus is a tragic figure in Greek mythology, known for his ill-fated attempt to escape from the island of Crete using wings made of feathers and wax. He was the son of the master craftsman Daedalus, who constructed the Labyrinth for King Minos of Crete. Icarus and his father attempted to flee the island after falling out of favor with the king. Although Daedalus warned him not to fly too close to the sun or the sea, Icarus ignored the advice, causing the wax in his wings to melt and sending him plummeting into the sea.",
+    "images": [
+      "/heroes/icarus1.png",
+      "/heroes/icarus2.png",
+      "/heroes/icarus3.png"
+    ],
+    "parents": ["Daedalus", "Naucrate"],
+    "children": [],
+    "quests": ["Attempted escape from Crete"],
+    "powers": ["Wings made of feathers and wax"],
+    "type": "hero",
+    "order": "g10"
+  },
+  {
+    "_id": "daedalus",
+    "name": "Daedalus",
+    "mythology": "greek",
+    "description": "Daedalus was a renowned inventor, architect, and craftsman in Greek mythology. He is best known for designing the Labyrinth, a complex maze built to imprison the Minotaur, a creature with the body of a man and the head of a bull. Daedalus was trapped on the island of Crete along with his son, Icarus, after the completion of the Labyrinth. To escape, he crafted wings made of feathers and wax for himself and his son. Despite warning Icarus not to fly too close to the sun, Icarus ignored his father's advice, leading to his tragic death.",
+    "images": [
+      "/heroes/daedalus1.png",
+      "/heroes/daedalus2.png",
+      "/heroes/daedalus3.png"
+    ],
+    "parents": ["Metion", "Alcippe"],
+    "children": ["Icarus", "Iapyx"],
+    "quests": ["Designing the Labyrinth", "Escape from Crete"],
+    "powers": [
+      "Exceptional intellect",
+      "Inventiveness",
+      "Expertise in architecture and craftsmanship"
+    ],
+    "type": "hero",
+    "order": "g11"
+  }
+]

@@ -28,9 +28,11 @@ export async function getDocumentById(collectionName, id) {
 export async function getAllDocuments(collectionName) {
   const db = await connectToDB();
   const documents = await db.collection(collectionName).find().toArray();
-  // console.log("Fetched Documents:", documents); // log fetched documents to console
+  console.log("Fetched Documents:", documents); // log fetched documents to console
   return documents;
 }
+
+
 
 export async function getAllDocumentsWithAttribute(
   collectionName,

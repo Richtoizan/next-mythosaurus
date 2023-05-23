@@ -15,10 +15,10 @@ const EntityAttributes = ({ entityType, entity }) => {
           <>
             <h1>{entity.name}</h1>
             <Image
-              src={entity.image}
+              src={entity.images[0]}
               alt={entity.name}
-              width={300} // Set the desired width
-              height={300} // Set the desired height
+              width={300}
+              height={300}
             />
             {renderAttribute("Mythology", entity.mythology)}
             {renderAttribute("Aliases", entity.aliases.join(", "))}
@@ -27,14 +27,49 @@ const EntityAttributes = ({ entityType, entity }) => {
             {renderAttribute("Parents", entity.parents.join(", "))}
             {renderAttribute("Children", entity.children.join(", "))}
             {renderAttribute("Description", entity.description)}
-
-            {/* ...other god attributes */}
           </>
         );
-      case "location":
+      case "locations":
         return <>{/* ...location attributes */}</>;
-      case "event":
+      case "events":
         return <>{/* ...event attributes */}</>;
+      case "heroes":
+        return (
+          <>
+            <h1>{entity.name}</h1>
+            <Image
+              src={entity.images[0]}
+              alt={entity.name}
+              width={300}
+              height={300}
+            />
+            {renderAttribute("Mythology", entity.mythology)}
+            {renderAttribute("Parents", entity.parents.join(", "))}
+            {renderAttribute("Quests", entity.quests.join(", "))}
+            {renderAttribute("Powers", entity.powers.join(", "))}
+            {renderAttribute("Children", entity.children.join(", "))}
+            {renderAttribute("Description", entity.description)}
+          </>
+        );
+      case "giants":
+        return (
+          <>
+            <h1>{entity.name}</h1>
+            <Image
+              src={entity.images[0]}
+              alt={entity.name}
+              width={300}
+              height={300}
+            />
+            {renderAttribute("Mythology", entity.mythology)}
+            {renderAttribute(
+              "Notable Actions",
+              entity.notable_actions.join(", ")
+            )}
+            {renderAttribute("Enemies", entity.enemies.join(", "))}
+            {renderAttribute("Description", entity.description)}
+          </>
+        );
       default:
         return null;
     }

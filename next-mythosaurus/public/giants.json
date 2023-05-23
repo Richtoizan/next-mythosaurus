@@ -1,0 +1,88 @@
+[
+  {
+    "_id": "ymir",
+    "name": "Ymir",
+    "mythology": "Norse",
+    "description": "Ymir is a primordial giant and the ancestor of all giants in Norse mythology. He was formed from the melting ice of Niflheim when it came into contact with the heat of Muspelheim. Ymir is said to have fed on the milk of the cosmic cow Auðumbla. When Ymir was slain by the gods Odin, Vili, and Ve, they used his body to create the world.",
+    "images": ["/giants/ymir1.png", "/giants/ymir2.png", "/giants/ymir3.png"],
+    "aliases": [],
+    "parents": [],
+    "children": [],
+    "enemies": ["Odin", "Vili", "Ve"],
+    "notable_actions": ["Creation of the world"],
+    "type": "giant",
+    "order": "n1"
+  },
+  {
+    "_id": "surtr",
+    "name": "Surtr",
+    "mythology": "Norse",
+    "description": "Surtr is a fire giant in Norse mythology. He is said to dwell in the realm of Muspelheim, where he guards the land of fire. Surtr is prophesied to play a major role in the events of Ragnarok, the cataclysmic destruction of the world. During Ragnarok, Surtr will lead the fire giants in a battle against the gods, ultimately setting the world ablaze.",
+    "images": [
+      "/giants/surtr1.png",
+      "/giants/surtr2.png",
+      "/giants/surtr3.png"
+    ],
+    "aliases": [],
+    "parents": [],
+    "children": [],
+    "enemies": ["Aesir"],
+    "notable_actions": ["Battle during Ragnarok"],
+    "type": "giant",
+    "order": "n2"
+  },
+  {
+    "_id": "hrungnir",
+    "name": "Hrungnir",
+    "mythology": "Norse",
+    "description": "Hrungnir is a powerful giant in Norse mythology. He is known for his incredible strength and massive stone-like body. Hrungnir once had a friendly competition with the god Odin, but the contest escalated into a challenge to a duel between Hrungnir and the god Thor. In the duel, Thor ultimately defeats Hrungnir and smashes his head with his mighty hammer, Mjolnir.",
+    "images": [
+      "/giants/hrungnir1.png",
+      "/giants/hrungnir2.png",
+      "/giants/hrungnir3.png"
+    ],
+    "aliases": [],
+    "parents": [],
+    "children": [],
+    "enemies": ["Thor"],
+    "notable_actions": ["Duel with Thor"],
+    "type": "giant",
+    "order": "n3"
+  },
+  {
+    "_id": "angrboda",
+    "name": "Angrboda",
+    "mythology": "Norse",
+    "description": "Angrboda is a giantess in Norse mythology. She is known as the mother of monstrous offspring, as she and the trickster god Loki are the parents of three fearsome creatures: the wolf Fenrir, the serpent Jormungandr, and the half-dead, half-living Hel, ruler of theunderworld. Angrboda is said to reside in the land of giants, Jotunheim. She is often depicted as a figure of power and mystery, with her children playing crucial roles in the events leading up to Ragnarok.",
+    "images": [
+      "/giants/angrboda1.png",
+      "/giants/angrboda2.png",
+      "/giants/angrboda3.png"
+    ],
+    "aliases": [],
+    "parents": [],
+    "children": ["Fenrir", "Jormungandr", "Hel"],
+    "enemies": ["Aesir"],
+    "notable_actions": ["Mother of monstrous offspring"],
+    "type": "giant",
+    "order": "n4"
+  },
+  {
+    "_id": "thrym",
+    "name": "Thrym",
+    "mythology": "Norse",
+    "description": "Thrym is a giant and king of the frost giants in Norse mythology. He is best known for his role in the myth of Thor's stolen hammer, Mjolnir. Thrym steals Mjolnir and demands the goddess Freyja as his bride in exchange for its return. The gods, unwilling to comply with his demand, devise a plan to disguise Thor as Freyja and retrieve the hammer. During the wedding ceremony, Thor reveals his true identity and slays Thrym along with his followers.",
+    "images": [
+      "/giants/thrym1.png",
+      "/giants/thrym2.png",
+      "/giants/thrym3.png"
+    ],
+    "aliases": [],
+    "parents": [],
+    "children": [],
+    "enemies": ["Thor"],
+    "notable_actions": ["Stealing Mjolnir", "Attempted marriage to Freyja"],
+    "type": "giant",
+    "order": "n5"
+  }
+]

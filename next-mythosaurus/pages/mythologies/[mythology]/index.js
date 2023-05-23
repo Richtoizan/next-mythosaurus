@@ -17,19 +17,27 @@ export async function getStaticProps(context) {
     mythologyId,
     { order: 1 }
   );
+
   const heroes = await getAllDocumentsWithAttribute(
     "heroes",
     "mythology",
     mythologyId,
     { order: 1 }
   );
-  // Add more entity types here as needed
+
+  const giants = await getAllDocumentsWithAttribute(
+    "giants",
+    "mythology",
+    mythologyId,
+    { order: 1 }
+  );
 
   return {
     props: {
       mythology,
       gods,
       heroes,
+      giants,
       // Add more entity types here as needed
     },
   };
@@ -47,7 +55,7 @@ export async function getStaticPaths() {
   };
 }
 
-const Mythology = ({ mythology, gods, heroes }) => {
+const Mythology = ({ mythology, gods, heroes, giants }) => {
   return (
     <>
       <Head>
@@ -64,10 +72,17 @@ const Mythology = ({ mythology, gods, heroes }) => {
         mythologyId={mythology._id}
         entities={gods}
       />
+
       <EntityDropdown
-        entityType="Heros"
+        entityType="heroes"
         mythologyId={mythology._id}
         entities={heroes}
+      />
+
+      <EntityDropdown
+        entityType="giants"
+        mythologyId={mythology._id}
+        entities={giants}
       />
 
       {/* Add more entity types here as needed */}

@@ -24,7 +24,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const mythologies = await getAllDocuments("mythologies");
 
-  const entityTypes = ["gods", "heroes"]; // Add more entity types here as needed
+  const entityTypes = ["gods", "heroes", "giants"]; // Add more entity types here as needed
 
   const paths = [];
   for (const mythology of mythologies) {
