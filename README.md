@@ -9,4 +9,6 @@
 
 ![image](https://github.com/Richtoizan/next-mythosaurus/assets/67191959/91f07a5e-f14e-4914-9276-87a52c697eb6)
 
+![image](https://github.com/Richtoizan/next-mythosaurus/assets/67191959/62769e14-cefe-4f8c-8b21-5676e5c5d89e)
+
 All text descriptions and images generated using AI
